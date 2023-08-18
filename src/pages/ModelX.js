@@ -10,7 +10,7 @@ const ModelX = () => {
       <Subsection
         title="Model X"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model-X.jpg"
+        backgroundImg="model-x.jpg"
         rightBtnText="ORDER NOW"
       />
       <Interior title="All-New Interior" backgroundImg="new-interior.jpg" />
