@@ -1,24 +1,26 @@
 import React from "react";
 import styled from "styled-components";
+import Fade from "react-reveal/Fade";
 
 const Cardsection = () => {
   return (
     <Container>
       <Cards>
-        <div className="card">
-          <div className="card__img">
-            <img src="/img/game.jpg" alt="" />
+        <Fade bottom>
+          <div className="card">
+            <div className="card__img">
+              <img src="/img/game.jpg" alt="" />
+            </div>
+            <div className="card__text">
+              <h4>Game from Anywhere</h4>
+              <p>
+                Up to 10 teraflops of processing power enables in-car gaming
+                on-par with today's newest consoles. Wireless controller
+                compatibility lets you game from any seat.
+              </p>
+            </div>
           </div>
-          <div className="card__text">
-            <h4>Game from Anywhere</h4>
-            <p>
-              Up to 10 teraflops of processing power enables in-car gaming
-              on-par with today's newest consoles. Wireless controller
-              compatibility lets you game from any seat.
-            </p>
-          </div>
-        </div>
-
+        </Fade>
         {/* <div className="card">
           <div className="card__img">
             <img src="/img/connected.jpg" alt="" />
@@ -32,34 +34,36 @@ const Cardsection = () => {
             </p>
           </div>
         </div> */}
-
-        <div className="card">
-          <div className="card__img">
-            <img src="/img/connected.jpg" alt="" />
+        <Fade bottom>
+          <div className="card">
+            <div className="card__img">
+              <img src="/img/connected.jpg" alt="" />
+            </div>
+            <div className="card__text">
+              <h4>Stay Connected</h4>
+              <p>
+                Up to 10 teraflops of processing power enables in-car gaming
+                on-par with today's newest consoles. Wireless controller
+                compatibility lets you game from any seat.
+              </p>
+            </div>
           </div>
-          <div className="card__text">
-            <h4>Stay Connected</h4>
-            <p>
-              Up to 10 teraflops of processing power enables in-car gaming
-              on-par with today's newest consoles. Wireless controller
-              compatibility lets you game from any seat.
-            </p>
+        </Fade>
+        <Fade bottom>
+          <div className="card">
+            <div className="card__img">
+              <img src="/img/connected.jpg" alt="" />
+            </div>
+            <div className="card__text">
+              <h4>Your Best Audio System</h4>
+              <p>
+                Up to 10 teraflops of processing power enables in-car gaming
+                on-par with today's newest consoles. Wireless controller
+                compatibility lets you game from any seat.
+              </p>
+            </div>
           </div>
-        </div>
-
-        <div className="card">
-          <div className="card__img">
-            <img src="/img/connected.jpg" alt="" />
-          </div>
-          <div className="card__text">
-            <h4>Your Best Audio System</h4>
-            <p>
-              Up to 10 teraflops of processing power enables in-car gaming
-              on-par with today's newest consoles. Wireless controller
-              compatibility lets you game from any seat.
-            </p>
-          </div>
-        </div>
+        </Fade>
       </Cards>
     </Container>
   );

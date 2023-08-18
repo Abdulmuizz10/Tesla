@@ -1,37 +1,42 @@
 import React from "react";
 import styled from "styled-components";
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 
 function Subsection({ title, description, backgroundImg, rightBtnText }) {
   return (
     <Wrap bgImage={backgroundImg}>
-      <HomeText>
-        <h1> {title} </h1>
-        <p>{description}</p>
-      </HomeText>
-
-      <Buttons>
-        <ButtonGroup>
-          <Specs>
-            <div>
-              <h3>390 mi</h3>
-              <p>Range (est.)</p>
-            </div>
-            <div>
-              <h3>1.99 s</h3>
-              <p>0-80mph</p>
-            </div>
-            <div>
-              <h3>200 mph</h3>
-              <p>Top Speed</p>
-            </div>
-            <div>
-              <h3>1,020 hp</h3>
-              <p>Peak power</p>
-            </div>
-          </Specs>
-          <RightButton>{rightBtnText}</RightButton>
-        </ButtonGroup>
-      </Buttons>
+      <Fade top>
+        <HomeText>
+          <h1> {title} </h1>
+          <p>{description}</p>
+        </HomeText>
+      </Fade>
+      <Zoom>
+        <Buttons>
+          <ButtonGroup>
+            <Specs>
+              <div>
+                <h3>390 mi</h3>
+                <p>Range (est.)</p>
+              </div>
+              <div>
+                <h3>1.99 s</h3>
+                <p>0-80mph</p>
+              </div>
+              <div>
+                <h3>200 mph</h3>
+                <p>Top Speed</p>
+              </div>
+              <div>
+                <h3>1,020 hp</h3>
+                <p>Peak power</p>
+              </div>
+            </Specs>
+            <RightButton>{rightBtnText}</RightButton>
+          </ButtonGroup>
+        </Buttons>
+      </Zoom>
     </Wrap>
   );
 }
